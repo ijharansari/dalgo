@@ -1,8 +1,8 @@
 /**
  * [1,2,3] => [1,2,4]
+ * which is equivalent to 123 + 1 = 124
  * [9,9,9] => [1,0,0,0]
- * we can convert the element into number
- * 1x100+2x10+3x1 
+ 
  */
 public class PlusOne {
     public int [] plusOne(int [] arr) {
