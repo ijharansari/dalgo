@@ -46,6 +46,11 @@ public class DoublyLinkedList {
        Node newNode = new Node(data);
        lastNode.next = newNode;
        newNode.prev = lastNode;
+
+       //create circular doubly list
+
+       newNode.next = root;
+       root.prev = newNode;
     }
 
     public void print() {
