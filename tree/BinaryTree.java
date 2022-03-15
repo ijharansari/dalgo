@@ -1,12 +1,12 @@
 /* Example of simple binary tree */
-/* class Node {
+class Node {
     int data;
     Node left, right;
     Node(int data) {
         this.data = data;
         left = right = null;
     }
-} */
+}
 public class BinaryTree {
     Node parent;
     BinaryTree(int data) {
