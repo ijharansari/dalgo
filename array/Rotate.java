@@ -3,6 +3,7 @@
 1   2               3   1
             =>  
 3   4               4   2
+8ha522
 
 -Store first row and first column in array
 -rotate last row to colum
