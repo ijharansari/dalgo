@@ -65,6 +65,7 @@ public class AddTwoLinkedList {
         int sum = 0, carry = 0;
         while(firstNode != null) {
             sum = firstNode.data + secondNode.data + carry;
+            carry = 0;
             if(sum > 9) {
                 carry = sum/10;
                 sum = sum%10;
@@ -86,13 +87,15 @@ public class AddTwoLinkedList {
         AddTwoLinkedList add = new AddTwoLinkedList();
         SinList list1 = new SinList();
         SinList list2 = new SinList();
+        list1.push(9);
         list1.push(1);
-        list1.push(6);
+        list1.push(1);
         list1.push(1);
 
-        list2.push(2);
-        list2.push(5);
-        list2.push(3);
+        list2.push(9);
+        list2.push(1);
+        list2.push(1);
+        list2.push(1);
 
         SinList sumedList = add.sumTwoLinkedList(list1.root, list2.root);
         sumedList.display();
