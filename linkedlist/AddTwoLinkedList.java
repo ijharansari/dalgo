@@ -1,4 +1,3 @@
-
 /**
  * Given two linked list of same size
  * Find the sum of two linked list in reversed order
