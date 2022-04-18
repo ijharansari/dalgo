@@ -84,6 +84,8 @@ public class AddTwoLinkedList {
     }
 
     public static void main(String args[]) {
+        String a = "asdfsaf";
+        a.toCharArray();
         AddTwoLinkedList add = new AddTwoLinkedList();
         SinList list1 = new SinList();
         SinList list2 = new SinList();
@@ -94,11 +96,16 @@ public class AddTwoLinkedList {
 
         list2.push(9);
         list2.push(1);
-        list2.push(1);
+        list2.push(0);
         list2.push(1);
 
         SinList sumedList = add.sumTwoLinkedList(list1.root, list2.root);
         sumedList.display();
 
+        int num  = 0;
+        while(num !=11) {
+            System.out.println(num);
+            num++;
+        }
     }
 }
