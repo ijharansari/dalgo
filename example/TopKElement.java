@@ -17,7 +17,7 @@ import java.util.TreeMap;
 */
 public class TopKElement {
     public static void main(String args[]) {
-        int arr[] = {4,1,-1,2,-1,2,3};
+        int arr[] = {1,2,3};
         Arrays.sort(arr);
         int prev = arr[0];
         int index = 1;
@@ -27,22 +27,24 @@ public class TopKElement {
             if(prev == arr[index]) {
                 count++;
             }else {
-                itemsCount.put(count, prev);
+                itemsCount.put(prev, count);
                 count = 1;
                 prev = arr[index];
             }
             index++;
         }
-        itemsCount.put(count, prev);
+        itemsCount.put(prev, count);
         int repeateElements[] = new int [3];
+        if(itemsCount.size() == 1 && arr.length == 3) {
+             repeateElements = arr;
+        }
         int i = 0;
         for(Map.Entry m: itemsCount.entrySet()) {
             repeateElements[i] = (int)m.getValue();
-            System.out.println(m.getKey()+" "+ m.getValue());
-            /* i++;
+            i++;
             if(i == repeateElements.length) {
                 break;
-            } */
+            }
         }
         for(int a: repeateElements) {
             System.out.println(a);
