@@ -1,3 +1,6 @@
+/**
+ * This code is valid for only number who lenght is atmost the length of long int
+ */
 class ListNode {
     int val;
     ListNode next;
