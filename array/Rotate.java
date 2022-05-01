@@ -6,7 +6,7 @@
 8ha522
 
 -Store first row and first column in array
--rotate last row to colum
+-rotate last row to columdfg sdf
 -for rotating second last row, re
 
 */
