@@ -1,3 +1,5 @@
+//https://www.educative.io/blog/crack-amazon-coding-interview-questions
+
 import java.util.*;
 class Main {
 	public Set<Integer[]> findElements(int[] datas, int sum) {
